@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nerko+One&family=Zen+Dots&display=swap');
+
+body {
+    background-color: white;
+    background-image: url("/images/banner2.png");
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-template-areas:
+        "nav nav"
+        "item1 item2"
+        "footer footer";
+}
+
+.nav {
+    font-family: sans-serif;
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+
+    background-color: aliceblue;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.nav>a {
+    padding-right: 50px;
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.allSamples>div>a {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.allSamples>div>a:hover {
+    color: rgb(70, 70, 70);
+}
+
+a:hover {
+    color: rgb(70, 70, 70);
+
+}
+
+.header {
+    display: flex;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    float: left;
+    padding-top: none;
+
+}
+
+.header img {
+
+    width: 100px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.item1 {
+    background-color: rgb(240, 248, 255, 0.8);
+    border-radius: 5px;
+
+    margin: 50px;
+    font-family: 'Zen Dots', cursive;
+    letter-spacing: 0.1em;
+    grid-area: item1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.item2 {
+    border-radius: 15px;
+    margin: 50px;
+    grid-area: item2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+
+    border-radius: 15px;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    max-height: 480px;
+}
+
+footer {
+    font-family: sans-serif;
+    background-color: aliceblue;
+    grid-area: footer;
+    padding: 20px;
+    padding-left: 20px;
+    text-align: center;
+
+
+}
+
+i {
+    text-align: center;
+
+}
+
+.item1edu {
+
+    text-align: left;
+
+}
+
+
+
+.sample1 {
+    flex-basis: 22%;
+
+
+}
+
+.sample2 {
+    flex-basis: 22%;
+}
+
+.sample3 {
+    flex-basis: 22%;
+}
+
+.sample4 {
+    flex-basis: 22%;
+}
+
+
+
+.allSamples {
+    display: flex;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        grid-template-columns: 1;
+        grid-template-rows: 4;
+        grid-template-areas:
+            "nav"
+            "item1"
+            "item2"
+            "footer";
+    }
+
+    nav {
+        flex-direction: row;
+
+    }
+
+}
